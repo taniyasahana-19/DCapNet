@@ -55,7 +55,7 @@ python DCapNet.py --train_image_dir data/train/images                   --train_
 
 The framework automatically:
 - Trains the **segmentation** and **classification** models  
-- Computes performance metrics (IoU, Dice, Accuracy, Precision, Recall, F1, RMSE, Error Rate)  
+- Computes performance metrics (IoU, Dice Score,mAP50, Accuracy, Precision, Recall, F1, RMSE, Error Rate)  
 - Saves:
   - Best model weights (`*_best.pth`)
   - Metrics (`metrics.json`)
@@ -103,7 +103,7 @@ Aliah University, Kolkata, India
 
 ## 📬 Contact
 
-- **Dr. Ayatullah Faruk Mollah** — [afmollah@aliah.ac.in](mailto:afmollah@aliah.ac.in)  
-- **Taniya Sahana** — [taniyaswork@gmail.com](mailto:taniyaswork@gmail.com)
+- **Dr. Ayatullah Faruk Mollah**, Email: [afmollah@aliah.ac.in](mailto:afmollah@aliah.ac.in)  
+- **Taniya Sahana**, Email: [taniyaswork@gmail.com](mailto:taniyaswork@gmail.com)
 
 ---
