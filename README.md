@@ -1,48 +1,109 @@
-# DCapNet
+# DCapNet (Deep Capsule Network)
 
-Unified PyTorch pipeline: segmentation (U-Net) -> mask & bbox cropping -> ensemble classification.
+**DCapNet** is a unified deep learning framework proposed for **segmentation and classification of hand gestures** captured in **uncontrolled environments**.  
+The proposed end-to-end architecture operates in three main stages:  
+(i) **Segmentation** using a U-Net backbone,  
+(ii) **Feature extraction and prediction** using multiple deep convolutional models, and  
+(iii) **Confidence-based ensemble classification strategy** for robust decision-making.
 
-## Repo structure
+---
+
+## 🔑 Salient Features of DCapNet
+
+- End-to-end **segmentation + classification** pipeline  
+- **U-Net-based segmentation** for precise hand region extraction  
+- **Multi-model ensemble** including ResNet, EfficientNet, Inception, and Xception  
+- **Confidence-weighted decision fusion** for final gesture classification  
+- Compatible with both **CPU and GPU** systems  
+- Modular structure for easy training, evaluation, and extension  
+- Supports visualization of segmentation masks, confusion matrix, and learning curves  
+
+---
+
+## ⚙️ Setup and Configuration
+
+The framework is implemented in **Python (PyTorch)** and has been trained and evaluated on the following configuration:
+
+- **Processor:** AMD Ryzen 7 (3.80 GHz)  
+- **RAM:** 16 GB  
+- **GPU:** NVIDIA GeForce RTX (6 GB VRAM)  
+- **Framework:** PyTorch (latest stable version)  
+- **Environment:** Linux / Windows / macOS compatible  
+
+### Installation
+
+Clone the repository and install dependencies:
+```bash
+git clone https://github.com/<your-username>/DCapNet.git
+cd DCapNet
+pip install -r requirements.txt
+```
+
+---
+
+## 🧠 Usage
+
+### Training and Evaluation
+
+To train and evaluate the full DCapNet pipeline:
+
+```bash
+python DCapNet.py --train_image_dir data/train/images                   --train_mask_dir data/train/masks                   --test_image_dir data/test/images                   --test_mask_dir data/test/masks                   --out_dir dcapnet_output
+```
+
+### Output
+
+The framework automatically:
+- Trains the **segmentation** and **classification** models  
+- Computes performance metrics (IoU, Dice, Accuracy, Precision, Recall, F1, RMSE, Error Rate)  
+- Saves:
+  - Best model weights (`*_best.pth`)
+  - Metrics (`metrics.json`)
+  - Training plots and confusion matrix (`plots/` directory)
+
+---
+
+## 📁 Repository Structure
 
 ```
 DCapNet/
-├── models/           # UNet and ensemble wrappers
-├── utils/            # Dataset, metrics, visualization
-├── train.py          # training helpers
-├── DCapNet.py        # main pipeline script (DCapNet function)
-├── requirements.txt
-└── README.md
-```
-## Setup
-
-```bash
-python -m venv venv
-source venv/bin/activate  # or venv\\Scripts\\activate on Windows
-pip install -r requirements.txt
-```
-## Data layout (expected)
-
-```
-data/
-├── train/
-│   ├── images/
-│   ├── masks/
-│   └── bboxes/
-├── test/
-│   ├── images/
-│   ├── masks/
-│   └── bboxes/
-```
-Put images in `images/`, segmentation masks in `masks/` (same filenames) and bounding boxes as `.txt` files in `bboxes/` (one numeric row: `x_min y_min width height`).
-
-## Usage
-
-- Run end-to-end pipeline (segmentation + classification):
-
-```bash
-python DCapNet.py --train_image_dir data/train/images --train_mask_dir data/train/masks --train_bbox_dir data/train/bboxes \
-                  --test_image_dir data/test/images --test_mask_dir data/test/masks --test_bbox_dir data/test/bboxes \
-                  --out_dir outputs --seg_epochs 50 --cls_epochs 50
+├── DCapNet.py                 # Main unified training and evaluation script
+├── models/                    # Contains U-Net and ensemble model definitions
+│   ├── unet.py
+│   ├── ensemble.py
+├── utils/                     # Utility scripts for metrics, visualization, and data handling
+│   ├── data.py
+│   ├── metrics.py
+│   ├── visualization.py
+├── train.py                   # Training loops for segmentation and classification
+├── requirements.txt           # Dependencies list
+└── README.md                  # Project documentation
 ```
 
-Outputs (models, metrics JSONs, plots) will be written to `--out_dir`.
+---
+
+## 📦 Dataset
+
+The model is trained and validated on the publicly available **Oulu Hand Gesture Dataset**, which can be accessed at:  
+🔗 [http://www.ouhands.oulu.fi](http://www.ouhands.oulu.fi)
+
+---
+
+## 🧑‍💻 Contributors
+
+**Dr. Ayatullah Faruk Mollah**  
+Assistant Professor, Department of Computer Science and Engineering,  
+Aliah University, Kolkata, India  
+
+**Taniya Sahana**  
+Research Scholar, Department of Computer Science and Engineering,  
+Aliah University, Kolkata, India  
+
+---
+
+## 📬 Contact
+
+- **Dr. Ayatullah Faruk Mollah** — [afmollah@aliah.ac.in](mailto:afmollah@aliah.ac.in)  
+- **Taniya Sahana** — [taniyaswork@gmail.com](mailto:taniyaswork@gmail.com)
+
+---
