@@ -13,7 +13,7 @@ The proposed end-to-end architecture operates in three main stages:
 - End-to-end **segmentation + classification** pipeline  
 - **U-Net-based segmentation** for precise hand region extraction  
 - **Multi-model ensemble** including ResNet, EfficientNet, Inception, and Xception  
-- **Confidence-weighted decision fusion** for final gesture classification  
+- **Confidence-based decision fusion** for final gesture classification  
 - Compatible with both **CPU and GPU** systems  
 - Modular structure for easy training, evaluation, and extension  
 - Supports visualization of segmentation masks, confusion matrix, and learning curves  
