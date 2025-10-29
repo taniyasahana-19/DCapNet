@@ -84,7 +84,7 @@ DCapNet/
 
 ## 📦 Dataset
 
-The model is trained and validated on the publicly available **Oulu Hand Gesture Dataset**, which can be accessed at:  
+The model is trained and validated on the publicly available **OUHANDS dataset**, which is available at:  
 🔗 [http://www.ouhands.oulu.fi](http://www.ouhands.oulu.fi)
 
 ---
