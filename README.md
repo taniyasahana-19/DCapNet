@@ -16,9 +16,13 @@
 
 ---
 
-## ⚙️ Setup and Configuration
+##  Setup and Configuration/Developing Environments
 
 The framework is implemented in **Python (PyTorch)** and has been trained and evaluated on the following configuration:
+Pytyon
+PyTorch
+OpenCV
+numpy,sklearn,scipy,six,PIL,matplotlib,seaborn
 
 - **Processor:** AMD Ryzen 7 (3.80 GHz)  
 - **RAM:** 16 GB  
@@ -37,7 +41,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🧠 Usage
+## Usage
 
 ### Training and Evaluation
 
