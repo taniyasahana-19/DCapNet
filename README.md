@@ -4,7 +4,7 @@
 
 ---
 
-## 🔑 Salient Features of DCapNet
+##  Salient Features of DCapNet
 
 - End-to-end **segmentation + classification** pipeline  
 - **U-Net-based segmentation** for precise hand region extraction  
@@ -63,7 +63,7 @@ The framework automatically:
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 DCapNet/
@@ -82,14 +82,14 @@ DCapNet/
 
 ---
 
-## 📦 Dataset
+## Dataset
 
 The model is trained and validated on the publicly available **OUHANDS dataset**, which is available at:  
 🔗 [http://www.ouhands.oulu.fi](http://www.ouhands.oulu.fi)
 
 ---
 
-## 🧑‍💻 Contributors
+##  Contributors
 
 **Taniya Sahana**  
 Research Scholar, Department of Computer Science and Engineering,  
@@ -101,7 +101,7 @@ Aliah University, Kolkata, India
 
 ---
 
-## 📬 Contact
+##  Contact
 - **Taniya Sahana**, Email: [taniyaswork@gmail.com](mailto:taniyaswork@gmail.com)
 - **Dr. Ayatullah Faruk Mollah**, Email: [afmollah@aliah.ac.in](mailto:afmollah@aliah.ac.in)  
 ---
