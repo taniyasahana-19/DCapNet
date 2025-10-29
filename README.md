@@ -91,19 +91,17 @@ The model is trained and validated on the publicly available **OUHANDS dataset**
 
 ## 🧑‍💻 Contributors
 
-**Dr. Ayatullah Faruk Mollah**  
-Assistant Professor, Department of Computer Science and Engineering,  
-Aliah University, Kolkata, India  
-
 **Taniya Sahana**  
 Research Scholar, Department of Computer Science and Engineering,  
 Aliah University, Kolkata, India  
 
+**Dr. Ayatullah Faruk Mollah**  
+Assistant Professor, Department of Computer Science and Engineering,  
+Aliah University, Kolkata, India 
+
 ---
 
 ## 📬 Contact
-
-- **Dr. Ayatullah Faruk Mollah**, Email: [afmollah@aliah.ac.in](mailto:afmollah@aliah.ac.in)  
 - **Taniya Sahana**, Email: [taniyaswork@gmail.com](mailto:taniyaswork@gmail.com)
-
+- **Dr. Ayatullah Faruk Mollah**, Email: [afmollah@aliah.ac.in](mailto:afmollah@aliah.ac.in)  
 ---
