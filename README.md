@@ -1,6 +1,6 @@
 # DCapNet (Deep Capsule Network)
 
-**DCapNet** is an integrated deep learning framework proposed for **segmentation and classification of hand gestures** captured in **uncontrolled environments**.  
+**DCapNet** is an integrated deep learning framework proposed for **segmentation and classification of hand gestures**.  
 The proposed end-to-end architecture operates in three main stages:  
 (i) **Segmentation** using a U-Net backbone,  
 (ii) **Feature extraction and prediction** using multiple deep convolutional models, and  
