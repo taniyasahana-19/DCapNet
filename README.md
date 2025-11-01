@@ -17,8 +17,6 @@
 ---
 
 ##  Setup and Configuration
-
-The framework is implemented in **Python (PyTorch)** and has been trained and evaluated on the following configuration:
 The DCapNet framework is implemented in Python (PyTorch) and can be executed on standard computing environments using some key libraries: PyTorch, OpenCV, NumPy, scikit-learn, SciPy, six, Pillow, matplotlib, and seaborn.
 For reference, the experiments in this work were conducted under the following setup:
 
