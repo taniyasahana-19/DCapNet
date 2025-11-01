@@ -24,7 +24,8 @@ For reference, the experiments in this work were conducted under the following s
 - **GPU (optional):** NVIDIA GeForce RTX (6 GB VRAM) 
 - **RAM:** 16 GB or higher recommended
 - **Operating System:** Compatible with Linux, Windows, and macOS
-- **Note:** GPU support is recommended for faster training but not mandatory. The framework can run on CPU-only systems with longer training times.
+
+**Note:** GPU support is recommended for faster training but not mandatory. The framework can run on CPU-only systems with longer training times.
 
 ### Installation
 
