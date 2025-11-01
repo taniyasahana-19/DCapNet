@@ -16,19 +16,17 @@
 
 ---
 
-##  Setup and Configuration/Developing Environments
+##  Setup and Configuration
 
 The framework is implemented in **Python (PyTorch)** and has been trained and evaluated on the following configuration:
-Pytyon
-PyTorch
-OpenCV
-numpy,sklearn,scipy,six,PIL,matplotlib,seaborn
+The DCapNet framework is implemented in Python (PyTorch) and can be executed on standard computing environments using some key libraries: PyTorch, OpenCV, NumPy, scikit-learn, SciPy, six, Pillow, matplotlib, and seaborn.
+For reference, the experiments in this work were conducted under the following setup:
 
-- **Processor:** AMD Ryzen 7 (3.80 GHz)  
-- **RAM:** 16 GB  
-- **GPU:** NVIDIA GeForce RTX (6 GB VRAM)  
-- **Framework:** PyTorch (latest stable version)  
-- **Environment:** Linux / Windows / macOS compatible  
+- **Processor:** AMD Ryzen 7 (3.80 GHz) or equivalent
+- **GPU (optional):** NVIDIA GeForce RTX (6 GB VRAM) 
+- **RAM:** 16 GB or higher recommended
+- **Operating System:** Compatible with Linux, Windows, and macOS
+- **Note:** GPU support is recommended for faster training but not mandatory. The framework can run on CPU-only systems with longer training times.
 
 ### Installation
 
